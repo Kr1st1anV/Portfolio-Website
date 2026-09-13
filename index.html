@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristian Velazquez — Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-300 antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex justify-between items-center">
+            <a href="#" class="font-mono font-semibold text-white tracking-tight hover:text-blue-400 transition-colors">
+                Kr1st1anV<span class="text-blue-500">.dev</span>
+            </a>
+            <nav class="flex items-center space-x-6 text-xs font-mono text-slate-400">
+                <a href="#projects" class="hover:text-white transition-colors">/projects</a>
+                <a href="#experience" class="hover:text-white transition-colors">/experience</a>
+                <a href="#about" class="hover:text-white transition-colors">/about</a>
+                <a href="#contact" class="hover:text-white transition-colors">/contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-16">
+
+        <!-- HERO SECTION -->
+        <section class="mb-24">
+            
+            <p class="font-mono text-xs text-blue-400 mb-3">// Candidate for B.S. in Computer Science & Astrophysics @ UChicago '29</p>
+            
+            <h1 class="text-4xl sm:text-5xl font-bold text-white tracking-tight leading-tight mb-6 max-w-3xl">
+                Kristian Velazquez
+            </h1>
+            
+            <p class="text-slate-400 text-base md:text-lg leading-relaxed max-w-2xl mb-8">
+                Software engineer specializing in real-time computer vision, low-latency neural streaming pipelines, continuous simulations, and interactive software.
+            </p>
+            
+            <div class="flex flex-wrap items-center gap-4 text-xs font-mono">
+                <a href="#projects" class="px-5 py-2.5 bg-white text-slate-950 font-sans font-semibold rounded hover:bg-slate-200 transition-all">
+                    Explore Work
+                </a>
+                
+                <a href="https://github.com/Kr1st1anV" target="_blank" class="px-4 py-2.5 border border-slate-800 text-slate-300 rounded hover:border-slate-600 hover:text-white transition-all flex items-center gap-2">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span>GitHub Profile</span>
+                </a>
+                
+                <a href="https://linkedin.com/in/kristianvelazquez" target="_blank" class="px-4 py-2.5 border border-slate-800 text-slate-300 rounded hover:border-slate-600 hover:text-white transition-all flex items-center gap-2">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- PROJECTS SHOWCASE GRID -->
+        <section id="projects" class="mb-24">
+            <div class="flex justify-between items-end mb-10 pb-4 border-b border-slate-800/80">
+                <div>
+                    <h2 class="font-mono text-xs uppercase tracking-wider text-blue-400 mb-1">// Portfolio</h2>
+                    <h3 class="text-2xl font-bold text-white">Featured Engineering Projects</h3>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- PROJECT 1: SpatialCAD -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-lg overflow-hidden flex flex-col justify-between hover:border-slate-700 transition-all group">
+                    <div>
+                        <div class="p-6">
+                            
+                            <h4 class="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors mb-2">
+                                SpatialCAD: 3D Computer Vision Engine
+                            </h4>
+                            
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Engineered a zero-hardware-cost 3D spatial viewport extracting 21 hand coordinate landmarks from 30 FPS webcam streams. Implemented matrix transformation vector math mapping gesture velocity to 6-DOF geometric operations with 35% reduced tracking jitter.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-6">
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">Python</span>
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">OpenCV</span>
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">MediaPipe</span>
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">PyOpenGL</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-xs font-mono">
+                            
+                            <a href="https://github.com/KristlanV" target="_blank" class="text-slate-400 hover:text-white flex items-center gap-1 transition-colors">
+                                <span>Source Code</span> <i data-lucide="github" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: Real-Time BCI Pipeline -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-lg overflow-hidden flex flex-col justify-between hover:border-slate-700 transition-all group">
+                    <div>
+                        <div class="p-6">
+                            
+                            <h4 class="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors mb-2">
+                                Real-Time Brain-Computer Interface Pipeline
+                            </h4>
+                            
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Achieved 97% cognitive state classification accuracy across 100+ labeled EEG trials. Engineered an 8-channel LSL ingestion engine with 3-second rolling ring buffers to constrain latency under 200ms across 250 Hz neural streams.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-6">
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">PyTorch</span>
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">PyRiemann</span>
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">MNE-Python</span>
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">LSL</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-xs font-mono">
+                            
+                            <a href="https://github.com/KristlanV" target="_blank" class="text-slate-400 hover:text-white flex items-center gap-1 transition-colors">
+                                <span>Source Code</span> <i data-lucide="github" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: Interactive Puzzle Engine -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-lg overflow-hidden flex flex-col justify-between hover:border-slate-700 transition-all group">
+                    <div>
+                        <div class="p-6">
+                            
+                            <h4 class="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors mb-2">
+                                Interactive Logic Puzzle Playground & PWA
+                            </h4>
+                            
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Translated paper logic puzzles into 7 digital experiences with dynamic constraint validation algorithms for real-time move validation. Integrated dynamic CMS scheduling serving 10,000+ active solvers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-6">
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">JavaScript</span>
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">Wix Velo</span>
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">PWA</span>
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">CMS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4: Laravel Advising PWA -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-lg overflow-hidden flex flex-col justify-between hover:border-slate-700 transition-all group">
+                    <div>
+                        <div class="p-6">
+                            
+                            <h4 class="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors mb-2">
+                                Centralized Advising PWA
+                            </h4>
+                            
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Designed and built a Laravel Progressive Web App from scratch to resolve communication bottlenecks in student advising workflows, featuring role-based authentication and live social feed integrations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-6">
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">Laravel</span>
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">PHP</span>
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">PWA</span>
+                            <span class="px-2 py-1 bg-slate-800/80 rounded border border-slate-700/50">REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="mb-24 pt-12 border-t border-slate-800/80">
+            <h2 class="font-mono text-xs uppercase tracking-wider text-blue-400 mb-2">// Experience</h2>
+            <h3 class="text-2xl font-bold text-white mb-8">Work & Research</h3>
+
+            <div class="space-y-8 font-sans">
+                <!-- Solving Fun -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-2">
+                    
+                    <div class="font-mono text-xs text-slate-500">June 2026 — Present</div>
+                    <div class="md:col-span-3">
+                        
+                        <h4 class="text-white font-medium">Solving Fun — Puzzle Technology & Web Development Intern</h4>
+                        
+                        <p class="text-slate-400 text-sm mt-1">Built web puzzle engines with dynamic constraint verification, progressive note-taking modes, multi-step undo/redo, and dynamic Wix CMS integration serving 10,000+ solvers.</p>
+                    </div>
+                </div>
+
+                <!-- European Defense Tech Hub -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-2">
+                    
+                    <div class="font-mono text-xs text-slate-500">June 2026 — Aug 2026</div>
+                    <div class="md:col-span-3">
+                        
+                        <h4 class="text-white font-medium">European Defense Tech Hub (EDTH) — Defense Tech & Quantum Research Fellow</h4>
+                        
+                        <p class="text-slate-400 text-sm mt-1">Authored whitepapers on satellite QKD pointing errors and cold-atom gyroscopes. Published newsletter editions to 18,000+ subscribers covering multi-domain data fusion and defense M&A in Berlin, Germany.</p>
+                    </div>
+                </div>
+
+                <!-- Schuler Scholar Program - Salesforce -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-2">
+                    
+                    <div class="font-mono text-xs text-slate-500">June 2023 — Aug 2023</div>
+                    <div class="md:col-span-3">
+                        
+                        <h4 class="text-white font-medium">Schuler Scholar Program — Salesforce Developer Intern</h4>
+                        
+                        <p class="text-slate-400 text-sm mt-1">Earned over 250,000 Trailhead points modeling student advising workflows, designing custom objects, and creating automated process flows.</p>
+                    </div>
+                </div>
+
+                <!-- Schuler Scholar Program - Web Dev -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-2">
+                    
+                    <div class="font-mono text-xs text-slate-500">June 2022 — Aug 2022</div>
+                    <div class="md:col-span-3">
+                        
+                        <h4 class="text-white font-medium">Schuler Scholar Program — Web Development Intern</h4>
+                        
+                        <p class="text-slate-400 text-sm mt-1">Built a Laravel Progressive Web App to centralize academic announcements and permission slips across student, parent, and administrative roles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT & SKILLS SECTION -->
+        <section id="about" class="mb-24 pt-12 border-t border-slate-800/80">
+            <h2 class="font-mono text-xs uppercase tracking-wider text-blue-400 mb-2">// Background & Skills</h2>
+            
+            <h3 class="text-2xl font-bold text-white mb-2">The University of Chicago</h3>
+            
+            <p class="text-slate-400 text-sm mb-6 font-mono">B.S. Computer Science & B.S. Astrophysics (GPA: 3.75/4.00) • Expected June 2029</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-mono text-xs">
+                <div class="p-5 rounded bg-slate-900/40 border border-slate-800">
+                    <span class="text-white font-sans font-semibold text-sm block mb-3">Languages</span>
+                    
+                    <p class="text-slate-400 leading-relaxed">Python, C, C++, Java, JavaScript, SQL, R, Lua, HTML/CSS</p>
+                </div>
+                <div class="p-5 rounded bg-slate-900/40 border border-slate-800">
+                    <span class="text-white font-sans font-semibold text-sm block mb-3">Vision & ML</span>
+                    
+                    <p class="text-slate-400 leading-relaxed">OpenCV, MediaPipe, PyTorch, NumPy, Pandas, PyRiemann, MNE-Python, Three.js</p>
+                </div>
+                <div class="p-5 rounded bg-slate-900/40 border border-slate-800">
+                    <span class="text-white font-sans font-semibold text-sm block mb-3">Tools & Platforms</span>
+                    
+                    <p class="text-slate-400 leading-relaxed">Linux/Unix, Docker, Git, CI/CD, Laravel, Firebase, Wix Velo / CMS</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="pt-12 border-t border-slate-800/80">
+            <div class="max-w-xl">
+                <h2 class="font-mono text-xs uppercase tracking-wider text-blue-400 mb-2">// Contact</h2>
+                <h3 class="text-2xl font-bold text-white mb-4">Let's Connect</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Open to software engineering roles, low-latency streaming research, computer vision, and interactive development opportunities.
+                </p>
+                
+                <a href="mailto:kristianv@uchicago.edu" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-sans font-medium text-xs rounded transition-all">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                    <span>kristianv@uchicago.edu</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="max-w-5xl mx-auto px-6 py-8 border-t border-slate-800/80 text-xs font-mono text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+        
+        <span>© Kristian Velazquez • University of Chicago</span>
+        <div class="flex items-center space-x-6">
+            
+            <a href="https://github.com/Kr1st1anV" target="_blank" class="hover:text-slate-300 transition-colors">GitHub</a>
+            
+            <a href="https://linkedin.com/in/kristianvelazquez" target="_blank" class="hover:text-slate-300 transition-colors">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
